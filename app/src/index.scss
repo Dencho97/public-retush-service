@@ -1,0 +1,85 @@
+// #root, .app.wrapper, .app.layout {
+//     height: 100%;
+// }
+
+html {
+    --primiry-color: #faad14;
+    --primiry-color-hover: #ffc53d;
+    --primiry-color-active: #d48806;
+}
+
+body {
+    
+}
+
+#root {
+    height: 100%;
+}
+
+
+.app {
+    height: 100vh;
+    &.wrapper {
+    }
+    &.content {
+        background-color: white;
+        padding: 30px;
+        overflow: auto;
+    }
+}
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: #333;
+    &_logo {
+        width: 120px;
+        height: 31px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 16px 24px 16px 0;
+        float: left;
+    }
+    &__menu {
+        float: left;
+        line-height: 64px;
+        display: flex;
+        background-color: #333;
+        .ant-menu-item {
+            display: flex;
+            align-items: center;
+            .anticon {
+                font-size: 1.5rem;
+            }
+            &:hover {
+                background-color: var(--primiry-color);
+            }
+        }
+    }
+    &__right {
+        float: right;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        &_status-email {
+            padding: 3px 5px;
+            background: transparent;
+            color: red;
+            border-color: red;
+            margin: 0 20px 0 0;
+        }
+        &_avatar {
+            background-color: var(--primiry-color);
+            font-weight: bold;
+        }
+    }
+}

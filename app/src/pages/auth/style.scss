@@ -1,0 +1,27 @@
+.wrapper {
+    height: 100%;
+    &.auth {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .auth {
+        .ant {
+            &-form {
+                width: 250px;
+            }
+            &-btn {
+                width: 100%;
+            }
+        }
+        &_or {
+            margin: 10px 0;
+            text-align: center;
+        }
+        &_reset-wrap {
+            text-align: right;
+            margin: -20px 0 20px 0;
+        }
+    }
+}
